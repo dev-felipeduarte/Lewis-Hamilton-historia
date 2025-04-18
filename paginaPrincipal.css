@@ -1,0 +1,262 @@
+/* Estrutura do corpo do site */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #ffe3e3, #ff8d8d);
+}
+
+/* Barra de Navegação */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: linear-gradient(180deg, black, #5b1014);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.links {
+  display: flex;
+  gap: 30px; /* controla o espaço ENTRE os links */
+}
+
+#logoHamilton {
+  width: 15%;
+}
+
+/* Banner */
+#banner {
+  width: 100%;
+  height: 100px;
+}
+
+/* Título e parágrafo */
+h1 {
+  font-size: 26px;
+  text-align: center;
+  padding: 0% 10%;
+}
+
+.hamiltonTexto {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 10%;
+}
+
+/* Imagens */
+.hamiltonFoto {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  padding-top: 5%;
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateX(-100%);
+  transition: all 3s;
+}
+
+.show {
+opacity: 1;
+filter: blur(0);
+transition: all 3s;
+transform: translateX(0);
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 15% auto auto auto;
+  padding: 3% 1%;
+  background-color: #5b1014;
+  color: white;
+}
+
+
+/* ========== Responsividade ========== **/
+
+@media(min-width: 768px) { /* Montar essa parte depois */
+
+  /* Barra de Navegação */
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: linear-gradient(180deg, black, #5b1014);
+  }
+ /* Barra de Navegação */
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: linear-gradient(180deg, black, #5b1014);
+    }
+
+  a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .links {
+    display: flex;
+    gap: 30px; /* controla o espaço ENTRE os links */
+  }
+
+  #logoHamilton {
+    width: 10%;
+  }
+  
+  /* Banner */
+  #banner {
+    width: 100%;
+    height: 210px;
+  }
+  
+  /* Título e parágrafo */
+  h1 {
+    padding-top: 2%;
+    font-size: 30px;
+    text-align: center;
+    
+  }
+  
+  .hamiltonTexto {
+    text-align: justify;
+    font-size: 22px;
+    line-height: 1.5;
+    padding: 0% 15%;
+    margin-top: 50px;
+    margin-bottom: 5px;
+  }
+  
+  /* Imagens */
+  .hamiltonFoto {
+  
+    width: 50%;
+    display: block;
+    border-radius: 30px;
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateX(-100%);
+    transition: all 3s;
+  }
+  
+  .show {
+  opacity: 1;
+  filter: blur(0);
+  transition: all 3s;
+  transform: translateX(0);
+  }
+  
+  /* Rodapé */
+  footer {
+    text-align: center;
+    font-size: 26px;
+    line-height: 1.5;
+    margin: 15% auto auto auto;
+    padding: 3% 1%;
+    background-color: #5b1014;
+    color: white;
+  }
+}
+
+  
+/* ========== Responsividade ========== **/
+
+@media(min-width: 1024px) { /* Montar essa parte depois */
+
+/* Barra de Navegação */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: linear-gradient(180deg, black, #5b1014);
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.links {
+  display: flex;
+  gap: 30px; /* controla o espaço ENTRE os links */
+}
+
+#logoHamilton {
+  width: 5%;
+}
+
+/* Banner */
+#banner {
+  width: 100%;
+  height: 280px;
+}
+
+/* Título e parágrafo */
+h1 {
+  padding-top: 2%;
+  font-size: 30px;
+  text-align: center;
+  
+}
+
+.hamiltonTexto {
+  text-align: justify;
+  font-size: 22px;
+  line-height: 1.5;
+  padding: 0% 20%;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+
+/* Imagens */
+.hamiltonFoto {
+  width: 30%;
+  display: block;
+  border-radius: 30px;
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateX(-100%);
+  transition: all 3s;
+}
+
+.show {
+opacity: 1;
+filter: blur(0);
+transition: all 3s;
+transform: translateX(0);
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 15% auto auto auto;
+  background-color: #5b1014;
+  color: white;
+}
+}
